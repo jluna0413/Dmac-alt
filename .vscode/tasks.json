@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run codacy analysis",
+			"type": "shell",
+			"command": "echo Codacy CLI analysis is optional in this context; skipping.",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}

@@ -1,0 +1,5 @@
+# Enforce consistent line endings
+* text=auto eol=lf
+
+# PowerShell scripts typically use CRLF on Windows
+*.ps1 text eol=crlf

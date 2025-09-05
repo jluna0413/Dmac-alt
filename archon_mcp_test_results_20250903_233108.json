@@ -1,0 +1,79 @@
+﻿{
+    "failed":  12,
+    "tests":  [
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "health_check",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "session_info",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "get_available_sources",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "perform_rag_query",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "search_code_examples",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "list_projects",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "create_project",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "list_tasks",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "create_task",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "list_documents",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "create_document",
+                      "success":  false
+                  },
+                  {
+                      "timestamp":  "2025-09-03 23:31:08",
+                      "details":  "",
+                      "tool":  "list_versions",
+                      "success":  false
+                  }
+              ],
+    "total":  12,
+    "passed":  0
+}

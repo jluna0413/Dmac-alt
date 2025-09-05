@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Run tests
+        run: npm test --silent
+
+      - name: Run health check (curl)
+        run: |
+          # CI runs the server in tests; check readiness and health endpoints
+          curl -sSf http://127.0.0.1:8052/ready | jq .
+          curl -sSf http://127.0.0.1:8052/health | jq .
+        env:
+          CI: true
+
+  windows-health:
+    runs-on: windows-latest
+    needs: build-and-test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run health check (PowerShell)
+        run: |
+          pwsh -NoProfile -Command "& './scripts/check-health.ps1'"
+        shell: pwsh

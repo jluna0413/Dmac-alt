@@ -1,0 +1,36 @@
+name: integration
+
+on:
+  push:
+    paths:
+      - 'mcp-stub/**'
+      - 'src/**'
+      - 'tests/**'
+  pull_request:
+    paths:
+      - 'mcp-stub/**'
+      - 'src/**'
+      - 'tests/**'
+
+jobs:
+  mcp-stub-integration:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install -r mcp-stub/requirements.txt
+          python -m pip install pytest requests
+
+      - name: Run integration test (fixture starts stub)
+        env:
+          PYTHONPATH: .
+        run: |
+          pytest -q mcp-stub/tests/test_integration_client_stub.py::test_client_posts_to_local_stub -q

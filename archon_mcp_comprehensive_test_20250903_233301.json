@@ -1,0 +1,81 @@
+{
+  "test_run": {
+    "timestamp": "20250903_233301",
+    "server_url": "http://localhost:8051/mcp",
+    "total_tests": 10,
+    "passed_tests": 0,
+    "failed_tests": 10
+  },
+  "results": [
+    {
+      "tool": "initialize",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Init failed: HTTP 406: {\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"message\":\"Not Acceptable: Client must accept both application/json and text/event-stream\"}}",
+      "timestamp": "2025-09-03T23:33:01.712310"
+    },
+    {
+      "tool": "tools/list",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Failed: HTTP 406: {\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"message\":\"Not Acceptable: Client must accept both application/json and text/event-stream\"}}",
+      "timestamp": "2025-09-03T23:33:01.717068"
+    },
+    {
+      "tool": "health_check",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Error: HTTP 406: {\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"message\":\"Not Acceptable: Client must accept both application/json and text/event-stream\"}}",
+      "timestamp": "2025-09-03T23:33:01.722379"
+    },
+    {
+      "tool": "session_info",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Error: HTTP 406: {\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"message\":\"Not Acceptable: Client must accept both application/json and text/event-stream\"}}",
+      "timestamp": "2025-09-03T23:33:01.779105"
+    },
+    {
+      "tool": "get_available_sources",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Error: HTTP 406: {\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"message\":\"Not Acceptable: Client must accept both application/json and text/event-stream\"}}",
+      "timestamp": "2025-09-03T23:33:01.784008"
+    },
+    {
+      "tool": "perform_rag_query",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Error: HTTP 406: {\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"message\":\"Not Acceptable: Client must accept both application/json and text/event-stream\"}}",
+      "timestamp": "2025-09-03T23:33:01.828874"
+    },
+    {
+      "tool": "search_code_examples",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Error: HTTP 406: {\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"message\":\"Not Acceptable: Client must accept both application/json and text/event-stream\"}}",
+      "timestamp": "2025-09-03T23:33:01.833095"
+    },
+    {
+      "tool": "list_projects",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Error: HTTP 406: {\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"message\":\"Not Acceptable: Client must accept both application/json and text/event-stream\"}}",
+      "timestamp": "2025-09-03T23:33:01.878329"
+    },
+    {
+      "tool": "list_tasks",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Error: HTTP 406: {\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"message\":\"Not Acceptable: Client must accept both application/json and text/event-stream\"}}",
+      "timestamp": "2025-09-03T23:33:01.882417"
+    },
+    {
+      "tool": "list_documents",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Error: HTTP 406: {\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"message\":\"Not Acceptable: Client must accept both application/json and text/event-stream\"}}",
+      "timestamp": "2025-09-03T23:33:01.927340"
+    }
+  ]
+}

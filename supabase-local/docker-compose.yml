@@ -1,0 +1,47 @@
+version: '3.7'
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "54321:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  realtime:
+    image: supabase/realtime:latest
+    environment:
+      DB_HOST: db
+      DB_NAME: postgres
+      DB_USER: postgres
+      DB_PASSWORD: example
+      REPLICATION_MODE: "1"
+    depends_on:
+      - db
+
+  rest:
+    image: supabase/postgrest:latest
+    environment:
+      DB_URI: "postgresql://postgres:example@db:5432/postgres"
+    depends_on:
+      - db
+
+  gotrue:
+    image: supabase/gotrue:latest
+    environment:
+      DATABASE_URL: "postgresql://postgres:example@db:5432/postgres"
+    depends_on:
+      - db
+
+  studio:
+    image: supabase/studio:latest
+    ports:
+      - "54322:3000"
+    depends_on:
+      - db
+
+volumes:
+  db-data:

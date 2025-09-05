@@ -1,0 +1,6 @@
+[MASTER]
+ignore=venv
+ignore-patterns=(^|.*/)?requirements.*\.txt$
+
+[MESSAGES CONTROL]
+disable=C0114,C0115,C0116

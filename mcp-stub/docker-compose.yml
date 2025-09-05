@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  mcp-stub:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - ./app:/app:ro
+    working_dir: /app

@@ -1,0 +1,106 @@
+{
+  "total_tests": 14,
+  "passed": 14,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "tool": "health_check",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.889825"
+    },
+    {
+      "tool": "session_info",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.899188"
+    },
+    {
+      "tool": "get_available_sources",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.909763"
+    },
+    {
+      "tool": "perform_rag_query",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Query: 'What is MCP protocol?' - Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.920531"
+    },
+    {
+      "tool": "search_code_examples",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Query: 'FastAPI endpoint' - Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.930468"
+    },
+    {
+      "tool": "list_projects",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.940577"
+    },
+    {
+      "tool": "create_project",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Project: 'Test Project 1757121848' - Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.948968"
+    },
+    {
+      "tool": "get_project",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Project ID: 1 - Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.958469"
+    },
+    {
+      "tool": "list_tasks",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.968640"
+    },
+    {
+      "tool": "create_task",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Task: 'Test Task 1757121848' - Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.978809"
+    },
+    {
+      "tool": "list_documents",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.988137"
+    },
+    {
+      "tool": "create_document",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Document: 'Test Document 1757121848' - Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:08.997817"
+    },
+    {
+      "tool": "list_versions",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Response: {'jsonrpc': '2.0', 'id': 'test_1757121848', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:09.006740"
+    },
+    {
+      "tool": "get_project_features",
+      "status": "\u2705 PASS",
+      "success": true,
+      "details": "Project ID: 1 - Response: {'jsonrpc': '2.0', 'id': 'test_1757121849', 'result': {'content': [{'type': 'text', 'text': '{\"succe...",
+      "timestamp": "2025-09-05T21:24:09.014727"
+    }
+  ]
+}

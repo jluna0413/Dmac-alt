@@ -21,6 +21,9 @@ import httpx
 
 class ArchonMCPTester:
     def __init__(self, base_url: str = "http://localhost:8051"):
+        # Use 127.0.0.1 instead of localhost for Windows compatibility
+        if "localhost" in base_url:
+            base_url = base_url.replace("localhost", "127.0.0.1")
         self.base_url = base_url
         self.mcp_url = f"{base_url}/mcp"
         self.session_id = f"test_session_{int(time.time())}"

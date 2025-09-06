@@ -1,0 +1,106 @@
+{
+  "total_tests": 14,
+  "passed": 0,
+  "failed": 14,
+  "pass_rate": 0.0,
+  "results": [
+    {
+      "tool": "health_check",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.427344"
+    },
+    {
+      "tool": "session_info",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.434345"
+    },
+    {
+      "tool": "get_available_sources",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.441412"
+    },
+    {
+      "tool": "perform_rag_query",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Query: 'What is MCP protocol?' - Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.447927"
+    },
+    {
+      "tool": "search_code_examples",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Query: 'FastAPI endpoint' - Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.454474"
+    },
+    {
+      "tool": "list_projects",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.461996"
+    },
+    {
+      "tool": "create_project",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Project: 'Test Project 1757124280' - Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.468506"
+    },
+    {
+      "tool": "get_project",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Project ID: 1 - Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.475065"
+    },
+    {
+      "tool": "list_tasks",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.481573"
+    },
+    {
+      "tool": "create_task",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Task: 'Test Task 1757124280' - Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.487649"
+    },
+    {
+      "tool": "list_documents",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.494656"
+    },
+    {
+      "tool": "create_document",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Document: 'Test Document 1757124280' - Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.501169"
+    },
+    {
+      "tool": "list_versions",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.508233"
+    },
+    {
+      "tool": "get_project_features",
+      "status": "\u274c FAIL",
+      "success": false,
+      "details": "Project ID: 1 - Response: {'error': {'code': 400, 'message': '{\"jsonrpc\":\"2.0\",\"id\":\"server-error\",\"error\":{\"code\":-32600,\"mes...",
+      "timestamp": "2025-09-05T22:04:40.514239"
+    }
+  ]
+}
